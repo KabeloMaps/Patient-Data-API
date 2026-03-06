@@ -2,7 +2,7 @@ import "./App.css";
 import NavBar from "./Components/ui/NavBar";
 function App() {
   return (
-    <div className="App bg-[#F6F7F8]">
+    <div className="App bg-[#e3e6e8]">
       <header className="flex items-justify-center">
         <NavBar />{" "}
       </header>
