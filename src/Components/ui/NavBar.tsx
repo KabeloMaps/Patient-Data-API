@@ -26,8 +26,16 @@ export default function NavBar() {
 
   return (
     <div className="navbar flex items-center justify-between bg-[#FFFFFF] rounded-full p-5 m-5 absolute inset-x-0 top-0 h-16">
+      <div className="left-logo-element flex items-start gap-2">
+        {" "}
+        <img
+          src="/public/Assets/TestLogo.svg"
+          alt="nav-logo"
+          className="h-8 w-auto"
+        />
+      </div>
       <ul
-        className="flex flex-row gap-4.5 justify-center items-center flex-1"
+        className="middle-components flex flex-row gap-4.5 justify-center items-center flex-1"
         style={navListStyle}
       >
         {navItems.map((item) =>
@@ -35,9 +43,7 @@ export default function NavBar() {
             <li
               key={item.label}
               className={`${navItemClass} pointer-events-none bg-transparent p-0`}
-            >
-              <img src={item.icon} alt="nav-logo" className="h-8 w-auto" />
-            </li>
+            ></li>
           ) : (
             <li key={item.label} className={navItemClass}>
               <img src={item.icon} alt={`${item.label.toLowerCase()}-icon`} />
@@ -47,7 +53,7 @@ export default function NavBar() {
         )}
       </ul>
 
-      <div className="flex flex-col items-end gap-3 text-sm justify-center">
+      <div className="right-elements flex flex-col items-end gap-3 text-sm justify-center">
         <div className="description flex items-center gap-2">
           <img
             src={navProfile.icon}
