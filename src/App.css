@@ -1,0 +1,10 @@
+:root,
+body,
+#root {
+  background-color: #e3e6e8;
+  min-height: 100vh;
+}
+
+body {
+  margin: 10.5rem;
+}
