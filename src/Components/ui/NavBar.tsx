@@ -1,14 +1,18 @@
 const navItems = [
-  { label: "nav-logo", icon: "/public/Assets/TestLogo.svg", variant: "logo" },
-  { label: "Overview", icon: "/public/Assets/home.svg" },
-  { label: "Patients", icon: "/public/Assets/group_fIll.svg" },
-  { label: "Schedule", icon: "/public/Assets/calendar.svg" },
-  { label: "Messages", icon: "/public/Assets/chat_bubble.svg" },
-  { label: "Transactions", icon: "/public/Assets/credit_card.svg" },
+  {
+    label: "nav-logo",
+    icon: "/public/Assets/NavBar/TestLogo.svg",
+    variant: "logo",
+  },
+  { label: "Overview", icon: "/public/Assets/NavBar/home.svg" },
+  { label: "Patients", icon: "/public/Assets/NavBar/group_fIll.svg" },
+  { label: "Schedule", icon: "/public/Assets/NavBar/calendar.svg" },
+  { label: "Messages", icon: "/public/Assets/NavBar/chat_bubble.svg" },
+  { label: "Transactions", icon: "/public/Assets/NavBar/credit_card.svg" },
 ];
 
 const navProfile = {
-  icon: "/public/Assets/doctor.png",
+  icon: "/public/Assets/NavBar/doctor.png",
   name: "Dr. Jose Simmons",
   description: "General Practitioner",
 };
@@ -29,7 +33,7 @@ export default function NavBar() {
       <div className="left-logo-element flex items-start gap-2">
         {" "}
         <img
-          src="/public/Assets/TestLogo.svg"
+          src="/public/Assets/NavBar/TestLogo.svg"
           alt="nav-logo"
           className="h-8 w-auto"
         />
@@ -70,12 +74,12 @@ export default function NavBar() {
             </div>
             <div className=" options flex items-center  justify-center  gap-3">
               <img
-                src="/public/Assets/settings.svg"
+                src="/public/Assets/NavBar/settings.svg"
                 alt="settings-icon"
                 className="cursor-pointer"
               />
               <img
-                src="/public/Assets/Options.svg"
+                src="/public/Assets/NavBar/Options.svg"
                 alt="options-icon"
                 className="cursor-pointer"
               />

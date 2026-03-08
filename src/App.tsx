@@ -1,11 +1,11 @@
 import "./App.css";
 import NavBar from "./Components/ui/NavBar";
+import PatientPanel from "./Components/ui/PatientPanel";
 function App() {
   return (
     <>
-      <header className="flex items-justify-center">
-        <NavBar />
-      </header>
+      <NavBar />
+      <PatientPanel />
     </>
   );
 }
